@@ -3,41 +3,73 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Setting Up a GitHub Pages Website</title>
+    <title>My Project Documentation: GitHub Pages Quickstart</title>
     <link rel="stylesheet" href="styles.css">
 </head>
 <body>
     <header>
-        <h1>Setting Up a GitHub Pages Website</h1>
+        <h1>Quickstart for GitHub Pages</h1>
     </header>
+    <div class="intro">
+        <p>This guide is adapted from GitHub’s Quickstart for GitHub Pages. It provides a step-by-step process for setting up a GitHub Pages website to host your project documentation, portfolio, or blog.</p>
+    </div>
+    <div class="usage-info">
+        <h2>Who Can Use This Feature?</h2>
+        <p>This documentation is intended for team members and contributors who need to quickly set up and manage a GitHub Pages site. Make sure you have a GitHub account and the necessary repository permissions. For more details on GitHub’s plans, see GitHub’s official documentation.</p>
+        <p>Note: GitHub Pages uses GitHub Actions for building sites with Jekyll. If you do not wish to use Jekyll, add a <code>.nojekyll</code> file to bypass the build process.</p>
+    </div>
     <main>
         <section>
             <h2>Introduction</h2>
-            <p>This guide provides a step-by-step process for setting up a GitHub Pages website. You will learn how to create a repository, add your documentation files, and configure GitHub Pages.</p>
+            <p>GitHub Pages are public webpages hosted and published through GitHub. The quickest way to get up and running is by using the Jekyll Theme Chooser to load a pre-made theme. You can then modify your GitHub Pages' content and style.</p>
+            <p>This guide will lead you through creating a user site at <code>username.github.io</code>.</p>
         </section>
         <section>
-            <h2>Prerequisites</h2>
-            <ul>
-                <li>GitHub account</li>
-                <li>Basic knowledge of HTML</li>
-            </ul>
-        </section>
-        <section>
-            <h2>Step-by-Step Guide</h2>
+            <h2>Creating your website</h2>
             <ol>
-                <li>Create a new repository on GitHub.</li>
-                <li>Add your documentation files, including this HTML file, to the repository.</li>
-                <li>Configure GitHub Pages in the repository settings.</li>
-                <li>Visit the provided URL to view your live site.</li>
+                <li>In the upper-right corner of any page, select <strong>+</strong>, then click <strong>New repository</strong>.</li>
+                <li>Enter <code>username.github.io</code> as the repository name. Replace <code>username</code> with your GitHub username. For example, if your username is <code>octocat</code>, the repository name should be <code>octocat.github.io</code>.</li>
+                <li>Choose a repository visibility. For more information, see <a href="https://docs.github.com/en/repositories/creating-and-managing-repositories/about-repositories" target="_blank">About repositories</a>.</li>
+                <li>Select <strong>Initialize this repository with a README</strong>.</li>
+                <li>Click <strong>Create repository</strong>.</li>
+                <li>Under your repository name, click <strong>Settings</strong>. If you cannot see the "Settings" tab, select the dropdown menu, then click <strong>Settings</strong>.</li>
+                <li>In the "Code and automation" section of the sidebar, click <strong>Pages</strong>.</li>
+                <li>Under "Build and deployment", under "Source", select <strong>Deploy from a branch</strong>.</li>
+                <li>Under "Build and deployment", under "Branch", use the branch dropdown menu and select a publishing source.</li>
+                <li>Optionally, open the README.md file of your repository. The README.md file is where you will write the content for your site. You can edit the file or keep the default content for now.</li>
+                <li>Visit <code>username.github.io</code> to view your new website. Note that it can take up to 10 minutes for changes to your site to publish after you push the changes to GitHub.</li>
             </ol>
         </section>
         <section>
-            <h2>Troubleshooting</h2>
-            <p>If you encounter issues, refer to GitHub’s documentation or community forums for assistance.</p>
+            <h2>Changing the Title and Description</h2>
+            <p>By default, the title of your site is <code>username.github.io</code>. You can change the title by editing the <code>_config.yml</code> file in your repository. You can also add a description for your site.</p>
+            <ol>
+                <li>Click the <strong>Code</strong> tab of your repository.</li>
+                <li>In the file list, click <code>_config.yml</code> to open the file.</li>
+                <li>Click the edit button (pencil icon) to edit the file.</li>
+                <li>The <code>_config.yml</code> file already contains a line that specifies the theme for your site. Add a new line with <code>title:</code> followed by the title you want, and add another line with <code>description:</code> followed by the description you want. For example:</li>
+                    <pre>
+                theme: jekyll-theme-minimal
+                title: Octocat's homepage
+                description: Bookmark this to keep an eye on my project updates!
+                    </pre>
+                <p>When you are done editing the file, click <strong>Commit changes</strong>.</p>
+            </ol>
         </section>
+        <section>
+            <h2>Next Steps</h2>
+            <p>For more information about how to add additional pages to your site, see <a href="https://docs.github.com/en/pages/getting-started-with-github-pages/adding-content-to-your-github-pages-site-using-jekyll" target="_blank">Adding content to your GitHub Pages site using Jekyll</a>.</p>
+            <p>For more information about setting up a GitHub Pages site with Jekyll, see <a href="https://docs.github.com/en/pages/getting-started-with-github-pages/about-github-pages-and-jekyll" target="_blank">About GitHub Pages and Jekyll</a>.</p>
+        </section>        
+        <section>
+            <h2>Help and support</h2>
+            <p>Did you find what you needed?</p>
+            <button>Yes</button>
+            <button>No</button>
+        </section>   
     </main>
     <footer>
-        <p>&copy; 2025 Your Name or Your Team Name</p>
+        <p>&copy; 2025 My Project Team</p>
     </footer>
 </body>
 </html>
